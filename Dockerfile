@@ -13,7 +13,7 @@ RUN cd /tmp/pandas && git checkout v0.15.0rc1 && python setup.py install
 RUN rm -rf /tmp/pandas
 
 RUN pip install scikit-learn matplotlib
-#RUN pip install blz 
+RUN pip install blz 
 
 
 # Crawler Tools 
