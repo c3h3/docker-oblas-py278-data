@@ -9,10 +9,18 @@ ADD custom.css /root/.ipython/profile_dark/static/custom/custom.css
 
 RUN pip install scikit-learn pandas matplotlib 
 
+#RUN apt-get install libxslt1-dev
+#RUN pip install requests pyquery pymongo
 
 RUN mkdir ipynbs
 WORKDIR ipynbs
-CMD ipython notebook --no-browser --ip=0.0.0.0 --port 8888 --profile=dark
+
+RUN git clone https://github.com/PlaYdata/PyCrawlers.git
+WORKDIR PyCrawlers
+RUN cd /ipynbs/PyCrawers && python setup.py install 
+WORKDIR dev_ipynbs
+
+#CMD ipython notebook --no-browser --ip=0.0.0.0 --port 8888 --profile=dark
 
 
 
