@@ -1,0 +1,133 @@
+    1  apt-get install libgtk2.0-dev libjpeg-dev libtiff4-dev libjasper-dev libopenexr-dev libtbb-dev libeigen3-dev yasm libfaac-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev libx264-dev libqt4-dev libqt4-opengl-dev sphinx-common texlive-latex-extra libv4l-dev libdc1394-22-dev libavcodec-dev libavformat-dev libswscale-dev default-jdk ant libvtk5-qt4-dev
+    2  apt-get install libgtk2.0-dev libjpeg-dev libtiff5-dev libjasper-dev libopenexr-dev libtbb-dev libeigen3-dev yasm libfaac-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev libvorbis-dev libxvidcore-dev libx264-dev libqt4-dev libqt4-opengl-dev sphinx-common texlive-latex-extra libv4l-dev libdc1394-22-dev libavcodec-dev libavformat-dev libswscale-dev default-jdk ant libvtk5-qt4-dev
+    3  cd tmp/
+    4  ls
+    5  git cloen https://github.com/shogun-toolbox/shogun.git
+    6  git clone https://github.com/shogun-toolbox/shogun.git
+    7  ls
+    8  cd shogun/
+    9  ls
+   10  mkdir build
+   11  cd build/
+   12  cmake .. .
+   13  cmake ..
+   14  ls
+   15  vim CMakeCache.txt 
+   16  cd /usr/include/
+   17  ls
+   18  cd ..
+   19  ls
+   20  cd ..
+   21  ls
+   22  cd root/
+   23  ls
+   24  ls -al
+   25  cd .pyenv/
+   26  ls
+   27  cd version
+   28  ls
+   29  cd versions
+   30  ls
+   31  cd 2.7.8/
+   32  ls
+   33  cd lib/
+   34  ls
+   35  cd python2.7/
+   36  lss
+   37  ls
+   38  cd ..
+   39  ls
+   40  cd ..
+   41  ls
+   42  cd ..
+   43  ls
+   44  cd ..
+   45  ls
+   46  cd ..
+   47  ls
+   48  cd ~
+   49  ls
+   50  cd ..
+   51  ls
+   52  cd tmp/
+   53  ls
+   54  cd shogun/
+   55  ls
+   56  rm -r build/
+   57  apt-cache search python
+   58  apt-cache search python2.7
+   59  apt-cache search python2.7-dev
+   60  apt-get install
+   61  apt-get install python2.7-dev
+   62  apt-get install python2.7-dev
+   63  apt-cache search python-dev
+   64  apt-get install  python-dev
+   65  apt-get update
+   66  apt-get install python2.7-dev
+   67  ls
+   68  mkdir build
+   69  ls
+   70  cd build/
+   71  ls
+   72  cmake ..
+   73  cd ..
+   74  ls
+   75  rm -r build/
+   76  ls
+   77  python
+   78  which python
+   79  cd ~
+   80  cd .pyenv/
+   81  cd version
+   82  l
+   83  cd versions/
+   84  ls
+   85  cd 2.7.8/
+   86  ls
+   87  cd bin/
+   88  ls
+   89  pwd
+   90  cd usr/include/
+   91  cd /usr/include/
+   92  ls
+   93  cd python2.7/
+   94  ls
+   95  cd /usr/lib/x86_64-linux-gnu/
+   96  ls
+   97  ls *.libpy
+   98  ls libpy*
+   99  cd ~
+  100  cd ..
+  101  cd /tmp/
+  102  ls
+  103  cd shogun/
+  104  ls
+  105  mkdir build
+  106  cmake -DBUNDLE_EIGEN=ON -DPYTHON_EXECUTABLE=/root/.pyenv/versions/2.7.8/bin/python -DPYTHON_INCLUDE_DIR=/usr/include/python2.7 -DPYTHON_LIBRARY=/usr/lib/x86_64-linux-gnu/libpython2.7.so -DPYTHON_PACKAGES_PATH:PATH=/root/.pyenv/versions/2.7.8/lib/python2.7/site-packages -DPythonModular=ON ..
+  107  cd build/
+  108  cmake -DBUNDLE_EIGEN=ON -DPYTHON_EXECUTABLE=/root/.pyenv/versions/2.7.8/bin/python -DPYTHON_INCLUDE_DIR=/usr/include/python2.7 -DPYTHON_LIBRARY=/usr/lib/x86_64-linux-gnu/libpython2.7.so -DPYTHON_PACKAGES_PATH:PATH=/root/.pyenv/versions/2.7.8/lib/python2.7/site-packages -DPythonModular=ON ..
+  109  cd ..
+  110  rm -r build/
+  111  apt-get install swig
+  112  ls
+  113  mkdir build
+  114  cd build/
+  115  ls
+  116  cmake -DBUNDLE_EIGEN=ON -DPYTHON_EXECUTABLE=/root/.pyenv/versions/2.7.8/bin/python -DPYTHON_INCLUDE_DIR=/usr/include/python2.7 -DPYTHON_LIBRARY=/usr/lib/x86_64-linux-gnu/libpython2.7.so -DPYTHON_PACKAGES_PATH:PATH=/root/.pyenv/versions/2.7.8/lib/python2.7/site-packages -DPythonModular=ON ..
+  117  ls
+  118  vim CMakeCache.txt 
+  119  vim CMakeCache.txt 
+  120  make
+  121  make install
+  122  cd ~
+  123  ls
+  124  vim .bashrc 
+  125  vim .bashrc 
+  126  source .bashrc 
+  127  ipython
+  128  history -n 200
+  129  history 200
+  130  exit
+  131  cd ipynbs/
+  132  ls
+  133  history 2000 > hist.txt
