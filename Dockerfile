@@ -1,7 +1,7 @@
 
 FROM c3h3/oblas-py278-scipy-base
 
-RUN apt-get install libxft-dev
+RUN apt-get -y install libxft-dev
 RUN pip install ipython pyzmq jinja2 tornado 
 
 RUN ipython profile create dark
