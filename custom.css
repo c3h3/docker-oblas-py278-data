@@ -95,3 +95,5 @@ div.output_stderr pre {color: #e0e0e0;}
 .cm-s-ipython span.cm-link {color: #aa759f;}
 
 .cm-s-ipython .CodeMirror-matchingbracket { text-decoration: underline; color: #e0e0e0 !important;}
+
+img.ui-resizable {background-color: #fff;}
