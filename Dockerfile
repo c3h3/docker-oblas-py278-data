@@ -11,6 +11,8 @@ RUN cd /tmp/shogun/build && cmake -D BUNDLE_EIGEN=ON -D PYTHON_EXECUTABLE=/root/
 
 RUN cd /tmp/shogun/build && make && make install 
 
+RUN cd /tmp && rm -rf shogun
+
 ADD .bashrc /root/.bashrc
 
 VOLUME ["/ipynbs", "/data"]
