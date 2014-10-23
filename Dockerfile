@@ -1,5 +1,5 @@
 
-FROM c3h3/oblas-py278-data
+FROM c3h3/oblas-py278-ocv
 
 EXPOSE 8888
 ENV IPYNB_PROFILE "c3h3-dark"
