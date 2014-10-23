@@ -3,7 +3,7 @@ FROM c3h3/oblas-py278-shogun
 
 EXPOSE 8888
 ENV IPYNB_PROFILE "c3h3-dark"
-ENV LD_LIBRARY_PATH="/usr/local/lib:/opt/OpenBLAS/lib/"
+ENV LD_LIBRARY_PATH "/usr/local/lib:/opt/OpenBLAS/lib/"
 
 WORKDIR ipynbs
 RUN ipython profile create c3h3-dark
