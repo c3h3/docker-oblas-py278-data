@@ -1,23 +1,13 @@
 
-FROM c3h3/oblas-py278-scipy-base
+FROM c3h3/oblas-py278-data
 
-RUN apt-get -y install libxft-dev
-RUN pip install ipython pyzmq jinja2 tornado 
+RUN apt-get update
+RUN apt-get -y install libopencv-dev
+RUN apt-get -y install python-opencv
 
-# Analysis Tools
-RUN cd /tmp && git clone https://github.com/pydata/pandas.git
-RUN cd /tmp/pandas && git checkout v0.15.0rc1 && python setup.py install
-RUN rm -rf /tmp/pandas
-
-RUN pip install scikit-learn matplotlib
-RUN pip install blz 
+RUN cd /usr/lib/python2.7/dist-packages/ && cp cv* /root/.pyenv/versions/2.7.8/lib/python2.7/site-packages/
 
 
-# Crawler Tools 
-RUN apt-get -y install libxslt1-dev
-RUN pip install requests pyquery pymongo
-
-RUN mkdir ipynbs
 RUN mkdir data
 VOLUME ["/ipynbs", "/data"]
 
