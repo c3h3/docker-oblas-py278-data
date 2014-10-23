@@ -7,8 +7,6 @@ RUN apt-get -y install python-opencv
 
 RUN cd /usr/lib/python2.7/dist-packages/ && cp cv* /root/.pyenv/versions/2.7.8/lib/python2.7/site-packages/
 
-
-RUN mkdir data
 VOLUME ["/ipynbs", "/data"]
 
 
