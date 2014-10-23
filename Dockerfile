@@ -13,7 +13,7 @@ RUN cd /tmp/shogun/build && make && make install
 
 RUN cd /tmp && rm -rf shogun
 
-ENV LD_LIBRARY_PATH "/usr/local/lib:/opt/OpenBLAS/lib/"
+ENV LD_LIBRARY_PATH $LD_LIBRARY_PATH:/usr/local/lib
 
 VOLUME ["/ipynbs", "/data"]
 
