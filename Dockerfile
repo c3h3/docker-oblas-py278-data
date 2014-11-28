@@ -16,6 +16,7 @@ RUN pip install blz
 # Crawler Tools 
 RUN apt-get -y install libxslt1-dev
 RUN pip install requests pyquery pymongo
+RUN pip install pillow
 
 RUN mkdir ipynbs
 RUN mkdir data
