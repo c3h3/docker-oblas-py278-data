@@ -1,6 +1,8 @@
 
 FROM c3h3/u1404-oblas-py278-ocv
 
+MAINTAINER Chia-Chi Chang <c3h3.tw@gmail.com>
+
 RUN apt-get update && apt-get -y install swig
 
 RUN cd tmp/ && git clone https://github.com/shogun-toolbox/shogun.git
